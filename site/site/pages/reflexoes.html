@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexões - Uma Análise Social</title>
+    <meta name="description" content="Compartilhe suas reflexões sobre desigualdade social inspiradas em Piltover e Zaun">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="nav-container">
+        <div class="container-custom">
+            <div class="nav-content">
+                <a href="../index.html" class="nav-logo">Piltover & Zaun</a>
+                <div class="nav-links">
+                    <a href="piltover.html" class="nav-link">Piltover</a>
+                    <a href="zaun.html" class="nav-link">Zaun</a>
+                    <a href="desigualdade.html" class="nav-link">Desigualdade</a>
+                    <a href="reflexoes.html" class="nav-link">Reflexões</a>
+                </div>
+                <button class="mobile-menu-button">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Menu Mobile -->
+        <div class="mobile-menu">
+            <a href="piltover.html" class="mobile-menu-link">Piltover</a>
+            <a href="zaun.html" class="mobile-menu-link">Zaun</a>
+            <a href="desigualdade.html" class="mobile-menu-link">Desigualdade</a>
+            <a href="reflexoes.html" class="mobile-menu-link">Reflexões</a>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <div class="container-custom">
+            <!-- Header -->
+            <section class="hero-section animate-fade-in" style="height: 60vh;">
+                <div class="gradient-overlay" style="background: linear-gradient(to bottom, rgba(128, 128, 128, 0.8), transparent);"></div>
+                <div class="black-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="Reflexões" class="hero-image">
+                <div class="hero-content">
+                    <h1 class="hero-title animate-slide-up">Reflexões</h1>
+                    <p class="hero-description animate-slide-up-delay">
+                        Compartilhe suas perspectivas sobre desigualdade social e possíveis caminhos para mudança
+                    </p>
+                </div>
+            </section>
+
+            <!-- Main Content -->
+            <div class="grid-2-1">
+                <!-- Form Section -->
+                <div>
+                    <section class="section animate-fade-in">
+                        <div class="card p-8">
+                            <h2 class="section-title">Compartilhe Sua Reflexão</h2>
+                            <form id="reflexoes-form" class="space-y-6">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Nome</label>
+                                    <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="title" class="form-label">Título da Reflexão</label>
+                                    <input type="text" id="title" name="title" class="form-input" placeholder="Um título para sua reflexão" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="reflection" class="form-label">Sua Reflexão</label>
+                                    <textarea id="reflection" name="reflection" rows="6" class="form-textarea" placeholder="Compartilhe seus pensamentos sobre desigualdade social..." required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Temas Relacionados</label>
+                                    <div class="space-y-2">
+                                        <label style="display: flex; align-items: center;">
+                                            <input type="checkbox" name="themes" value="piltover" class="form-checkbox">
+                                            <span style="margin-left: 0.5rem;">Piltover</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center;">
+                                            <input type="checkbox" name="themes" value="zaun" class="form-checkbox">
+                                            <span style="margin-left: 0.5rem;">Zaun</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center;">
+                                            <input type="checkbox" name="themes" value="desigualdade" class="form-checkbox">
+                                            <span style="margin-left: 0.5rem;">Desigualdade Econômica</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center;">
+                                            <input type="checkbox" name="themes" value="justica" class="form-checkbox">
+                                            <span style="margin-left: 0.5rem;">Injustiça Ambiental</span>
+                                        </label>
+                                        <label style="display: flex; align-items: center;">
+                                            <input type="checkbox" name="themes" value="solucoes" class="form-checkbox">
+                                            <span style="margin-left: 0.5rem;">Propostas de Solução</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-full">Enviar Reflexão</button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <div>
+                    <div style="position: sticky; top: 2rem;">
+                        <div class="card p-6 mb-8">
+                            <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Dicas para Reflexão</h3>
+                            <ul class="space-y-2">
+                                <li style="display: flex; align-items: center;">
+                                    <span style="width: 0.5rem; height: 0.5rem; background-color: var(--piltover); border-radius: 9999px; margin-right: 0.5rem;"></span>
+                                    Seja específico e claro
+                                </li>
+                                <li style="display: flex; align-items: center;">
+                                    <span style="width: 0.5rem; height: 0.5rem; background-color: var(--piltover); border-radius: 9999px; margin-right: 0.5rem;"></span>
+                                    Use exemplos concretos
+                                </li>
+                                <li style="display: flex; align-items: center;">
+                                    <span style="width: 0.5rem; height: 0.5rem; background-color: var(--piltover); border-radius: 9999px; margin-right: 0.5rem;"></span>
+                                    Proponha soluções práticas
+                                </li>
+                                <li style="display: flex; align-items: center;">
+                                    <span style="width: 0.5rem; height: 0.5rem; background-color: var(--piltover); border-radius: 9999px; margin-right: 0.5rem;"></span>
+                                    Mantenha o respeito
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card p-6">
+                            <blockquote style="font-size: 1.125rem; font-style: italic; color: #4b5563; margin-bottom: 1rem;">
+                                "A mudança começa quando cada um de nós decide refletir e agir sobre as
+                                desigualdades que nos cercam."
+                            </blockquote>
+                            <p style="font-size: 0.875rem; color: #6b7280;">- Guia para Reflexões</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community Reflections -->
+            <section class="section">
+                <h2 class="section-title text-center">Reflexões da Comunidade</h2>
+                <div class="grid-3">
+                    <!-- Reflection Card 1 -->
+                    <div class="card">
+                        <div class="p-6">
+                            <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">O Custo do Progresso</h3>
+                            <p style="font-size: 0.875rem; color: #6b7280; margin-bottom: 1rem;">Por Maria Silva • 2 dias atrás</p>
+                            <p class="mb-4">
+                                Quando pensamos em desenvolvimento, precisamos questionar quem está
+                                pagando o preço do progresso. Em Piltover, como em nossa sociedade,
+                                o luxo de alguns depende da exploração de outros.
+                            </p>
+                            <div class="tag-container">
+                                <span class="tag">Piltover</span>
+                                <span class="tag">Desigualdade</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reflection Card 2 -->
+                    <div class="card">
+                        <div class="p-6">
+                            <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Resiliência em Zaun</h3>
+                            <p style="font-size: 0.875rem; color: #6b7280; margin-bottom: 1rem;">Por João Santos • 5 dias atrás</p>
+                            <p class="mb-4">
+                                A capacidade de adaptação e inovação das comunidades marginalizadas
+                                é inspiradora. Como em Zaun, precisamos valorizar e aprender com
+                                essas experiências de resiliência.
+                            </p>
+                            <div class="tag-container">
+                                <span class="tag">Zaun</span>
+                                <span class="tag">Resiliência</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reflection Card 3 -->
+                    <div class="card">
+                        <div class="p-6">
+                            <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Caminhos para Mudança</h3>
+                            <p style="font-size: 0.875rem; color: #6b7280; margin-bottom: 1rem;">Por Ana Costa • 1 semana atrás</p>
+                            <p class="mb-4">
+                                Precisamos repensar nossas estruturas sociais para criar um mundo
+                                mais justo. A educação, o acesso à tecnologia e a participação
+                                política são direitos que devem ser universais.
+                            </p>
+                            <div class="tag-container">
+                                <span class="tag">Soluções</span>
+                                <span class="tag">Mudança</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-custom">
+            <div class="grid-3">
+                <div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">Sobre o Projeto</h3>
+                    <p style="color: #9ca3af;">
+                        Uma análise das desigualdades sociais através das cidades fictícias
+                        de Piltover e Zaun, convidando à reflexão sobre nossa própria sociedade.
+                    </p>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="piltover.html" class="footer-link">Piltover</a>
+                        </li>
+                        <li>
+                            <a href="zaun.html" class="footer-link">Zaun</a>
+                        </li>
+                        <li>
+                            <a href="desigualdade.html" class="footer-link">Desigualdade</a>
+                        </li>
+                        <li>
+                            <a href="reflexoes.html" class="footer-link">Reflexões</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">Contato</h3>
+                    <p style="color: #9ca3af;">
+                        Tem alguma sugestão ou feedback? Entre em contato conosco.
+                    </p>
+                    <a href="mailto:contato@piltoverzaun.com" class="footer-link">
+                        contato@piltoverzaun.com
+                    </a>
+                </div>
+            </div>
+            <div class="footer-border">
+                <p>© 2024 Piltover & Zaun. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 
